@@ -1,0 +1,118 @@
+ /*----------------------*\
+	LAYOUT-CABEÇALHO 
+ \*----------------------*/
+ 
+.layout-cabecalho{
+	border-bottom: 1px solid #ccc;
+	height: 60px;
+	line-height: 60px;
+
+	background-color: #fff;
+}
+
+.layout-cabecalho--home {	
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;	
+}
+
+@media (min-width: 1200px) {
+	.layout-cabecalho {
+		width: 1170px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+ /*----------------------*\
+		LAYOUT-PLANOS 
+ \*----------------------*/
+
+.layout-planos{
+	padding: 80px 0;
+}
+
+@media(min-width: 970px) {
+	.layout-planos {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media(max-width: 749px) {
+	
+  .layout-planos .row > div:not(.ultima-coluna) {
+    margin-bottom: 40px;
+  }
+}
+
+
+/*
+esse bloco não é mais necessário por causa do uso do sistema de grid do bootstrap
+.planos::after{
+
+	content: "";
+	display: block;
+	clear: both;
+}
+*/
+
+ /*----------------------*\
+		LAYOUT-CHAMADA 
+ \*----------------------*/
+
+.layout-chamada {
+	padding: 8% 0;
+	margin-top: 60px;
+
+	background-color: #7ab55c
+}
+
+@media (min-width: 1200px){
+	.layout-chamada {
+		width: 1170px;
+		margin: auto;
+	}
+}
+
+/*----------------------*\
+	LAYOUT-DEPOIMENTO 
+ \*----------------------*/
+
+ .layout-depoimento {
+ 	padding: 80px 0;
+
+ 	background-color: #e1e1e1;
+}
+
+@media (min-width: 1200px){
+	.layout-depoimento {
+		width: 1170px;
+		margin: auto;
+	}
+}
+
+/*----------------------*\
+	LAYOUT-RODAPE
+ \*----------------------*/
+
+ .layout-rodape {
+ 	height: 80px;
+ 	line-height: 4;
+
+ 	background-color: #484848;
+
+ 	color: #fff;
+ 	text-align: center;
+ }
+
+ @media (min-width: 1200px){
+	.layout-rodape {
+		width: 1170px;
+		margin: auto;
+	}
+}
